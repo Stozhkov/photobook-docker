@@ -7,8 +7,8 @@ services:
     command: gunicorn photobook.wsgi:application -w 5 --bind 0.0.0.0:8000
     expose:
       - 8000
-    ports:
-      - 8000:8000
+#    ports:
+#      - 8000:8000
     links:
       - redis:redis
     volumes:
